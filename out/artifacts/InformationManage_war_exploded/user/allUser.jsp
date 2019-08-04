@@ -1,12 +1,13 @@
-<%@ page import="cn.jackan.domain.User" %>
-<%@ page import="java.util.ArrayList" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: jacka
   Date: 2019/8/1
   Time: 21:55
   To change this template use File | Settings | File Templates.
 --%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path;
@@ -56,7 +57,6 @@
 </div>
 
 <div class="rightinfo">
-
     <table class="tablelist">
         <thead>
         <tr>
@@ -69,22 +69,34 @@
         </tr>
         </thead>
         <tbody>
-        <%
-            ArrayList<User> users = (ArrayList<User>) session.getAttribute("users");
-            for (User u : users) {
-        %>
-        <tr>
+<%--        使用EL表达式和JSTL来实现--%>
+        <c:forEach items="${users}" var="u">
+            <tr>
+                <td>${u.uid}</td>
+                <td>${u.uname}</td>
+                <td>${u.password}</td>
+                <td>${u.sex==0? "女":"男"}</td>
+                <td>${u.age==0? "":u.age}</td>
+                <td>${empty u.birth? "":u.birth}</td>
+            </tr>
+        </c:forEach>
 
-            <td><%=u.getUid()%></td>
-            <td><%=u.getUname()%></td>
-            <td><%=u.getPassword()%></td>
-            <td><%=u.getSex() == 0 ? "女" : "男"%></td>
-            <td><%=u.getAge() ==0? "":u.getAge()%></td>
-            <td><%=u.getBirth()==null? "":u.getBirth()%></td>
+<%--        使用Java脚本段--%>
+<%--        <%--%>
+<%--            ArrayList<User> users = (ArrayList<User>) session.getAttribute("users");--%>
+<%--            for (User u : users) {--%>
+<%--        %>--%>
+<%--        <tr>--%>
+<%--            <td><%=u.getUid()%></td>--%>
+<%--            <td><%=u.getUname()%></td>--%>
+<%--            <td><%=u.getPassword()%></td>--%>
+<%--            <td><%=u.getSex() == 0 ? "女" : "男"%></td>--%>
+<%--            <td><%=u.getAge() ==0? "":u.getAge()%></td>--%>
+<%--            <td><%=u.getBirth()==null? "":u.getBirth()%></td>--%>
 
-            <%--<td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink"> 删除</a></td>--%>
-        </tr>
-        <%}%>
+<%--            &lt;%&ndash;<td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink"> 删除</a></td>&ndash;%&gt;--%>
+<%--        </tr>--%>
+<%--        <%}%>--%>
         </tbody>
     </table>
 

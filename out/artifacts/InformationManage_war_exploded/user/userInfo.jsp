@@ -1,4 +1,4 @@
-<%@ page import="cn.jackan.domain.User" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: jacka
   Date: 2019/7/31
@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path;
@@ -57,9 +59,6 @@
 
 <div class="rightinfo">
 
-    <%
-        User u = (User) session.getAttribute("user");
-    %>
     <table class="tablelist">
         <thead>
         <tr>
@@ -73,12 +72,18 @@
         </thead>
         <tbody>
         <tr>
-            <td><%=u.getUid()%></td>
-            <td><%=u.getUname()%></td>
-            <td><%=u.getPassword()%></td>
-            <td><%=u.getSex()==0? "女":"男"%></td>
-            <td><%=u.getAge()==0? "":u.getAge()%></td>
-            <td><%=u.getBirth()==null?"":u.getBirth()%></td>
+            <td>${user.uid}</td>
+            <td>${user.uname}</td>
+            <td>${user.password}</td>
+            <td>${user.sex==0? "女":"男"}</td>
+            <td>${user.age==0? "":user.age}</td>
+            <td>${empty user.birth ?"":user.birth}</td>
+<%--            <td><%=u.getUid()%></td>--%>
+<%--            <td><%=u.getUname()%></td>--%>
+<%--            <td><%=u.getPassword()%></td>--%>
+<%--            <td><%=u.getSex()==0? "女":"男"%></td>--%>
+<%--            <td><%=u.getAge()==0? "":u.getAge()%></td>--%>
+<%--            <td><%=u.getBirth()==null?"":u.getBirth()%></td>--%>
             <%--<td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink"> 删除</a></td>--%>
         </tr>
 

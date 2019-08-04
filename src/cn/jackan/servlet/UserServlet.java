@@ -17,6 +17,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * flag : 0 密码错误
+ * flag : 1 修改密码成功
+ * flag : 2  注册成功
+ */
+
 @WebServlet(name = "UserServlet", urlPatterns = "/user")
 public class UserServlet extends HttpServlet {
     private UserService us = new UserServiceImpl();
@@ -61,7 +67,7 @@ public class UserServlet extends HttpServlet {
         boolean status = us.userRegisterService(u);
         if(status){
             //注册成功
-            req.getSession().setAttribute("msg2", "");
+            req.getSession().setAttribute("flag", 2);
             resp.sendRedirect("/login.jsp");
         }
 
@@ -81,7 +87,7 @@ public class UserServlet extends HttpServlet {
         String newPwd = req.getParameter("newPwd");
         boolean status = us.updateUserPwdService(user.getUid(), newPwd);
         if (status) {
-            req.getSession().setAttribute("msg", "modifyPwd");
+            req.getSession().setAttribute("flag", 1);
             resp.sendRedirect("/login.jsp");
         }
 
@@ -106,7 +112,7 @@ public class UserServlet extends HttpServlet {
             //最前面的/表示服务器根目录（一般要使用绝对路径，不然urlPattern是个路径的时候会出错）
             // 没有/的时候表示相对路径
             resp.sendRedirect("/main/main.jsp");
-        } else {
+        } else {·
             req.setAttribute("flag", 0);
             //请求转发
             //在请求转发的时候/表示项目根目录

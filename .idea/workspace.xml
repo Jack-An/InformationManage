@@ -6,7 +6,26 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e99848a-b842-4c02-aa4f-3128db2d6db9" name="Default Changelist" comment="" />
+    <list default="true" id="3e99848a-b842-4c02-aa4f-3128db2d6db9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jstl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/standard.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/gson-2.8.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/standard.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InformationManage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/InformationManage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/WEB-INF/classes/cn/jackan/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/WEB-INF/classes/cn/jackan/servlet/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/user/allUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/user/allUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/user/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/user/userInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InformationManage/cn/jackan/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InformationManage/cn/jackan/servlet/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/jackan/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/jackan/servlet/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/user/allUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/allUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/user/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/userInfo.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +57,9 @@
         <option value="Jsp File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/web/css/style.css" root0="SKIP_HIGHLIGHTING" />
@@ -654,29 +676,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564583724949" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\project\InformationManage\web" />
-      <recent name="D:\project\InformationManage\web\user" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\InformationManage\lib" />
       <recent name="D:\project\InformationManage\web\js" />
       <recent name="D:\project\InformationManage\web\css" />
       <recent name="D:\project\InformationManage\web" />
       <recent name="D:\project\InformationManage\web\main" />
-      <recent name="D:\project\InformationManage\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\InformationManage\web" />
+      <recent name="D:\project\InformationManage\web\user" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -779,11 +803,23 @@
       <workItem from="1564317919056" duration="25178000" />
       <workItem from="1564662439466" duration="11926000" />
       <workItem from="1564750329879" duration="5955000" />
+      <workItem from="1564901973538" duration="4020000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="masterDetails">
     <states>

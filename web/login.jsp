@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -43,42 +45,30 @@
 <div class="loginbody">
     <span class="systemlogo"></span>
     <br/>
-    <%
-        Object flag = request.getAttribute("flag");
-        if (flag != null) {
-    %>
-    <div style="text-align: center">
-        <span style="font-size: 15px;color: darkred;font-weight: bold">用户名或者密码错误</span>
-    </div>
-    <% } %>
+    <c:choose>
+        <c:when test="${flag==0}">
+            <div style="text-align: center">
+                <span style="font-size: 15px;color: darkred;font-weight: bold">用户名或者密码错误</span>
+            </div>
+        </c:when>
+        <c:when test="${flag==1}">
+            <div style="text-align: center">
+                <span style="font-size: 15px;color: darkred;font-weight: bold">密码修改成功，请重新登陆</span>
+            </div>
+        </c:when>
+        <c:when test="${flag==2}">
+            <div style="text-align: center">
+                <span style="font-size: 15px;color: darkred;font-weight: bold">注册成功，请登陆</span>
+            </div>
 
-    <%
-        Object msg = session.getAttribute("msg");
-        if (msg != null) {
-    %>
-    <div style="text-align: center">
-        <span style="font-size: 15px;color: darkred;font-weight: bold">密码修改成功，请重新登陆</span>
-    </div>
-    <% }
-        session.removeAttribute("msg");
-    %>
+        </c:when>
+    </c:choose>
+    <c:remove var="flag" scope="session" />
 
-
-    <%
-        Object msg2 = session.getAttribute("msg2");
-        if (msg2 != null) {
-    %>
-    <div style="text-align: center">
-        <span style="font-size: 15px;color: darkred;font-weight: bold">注册成功，请登陆</span>
-    </div>
-    <% }
-        session.removeAttribute("msg2");
-    %>
 
 
 
     <div class="loginbox">
-
         <form action="user" method="post">
             <input type="hidden" name="oper" value="login"/>
             <ul>
