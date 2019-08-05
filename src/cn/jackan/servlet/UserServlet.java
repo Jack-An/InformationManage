@@ -112,7 +112,7 @@ public class UserServlet extends HttpServlet {
             //最前面的/表示服务器根目录（一般要使用绝对路径，不然urlPattern是个路径的时候会出错）
             // 没有/的时候表示相对路径
             resp.sendRedirect("/main/main.jsp");
-        } else {·
+        } else {
             req.setAttribute("flag", 0);
             //请求转发
             //在请求转发的时候/表示项目根目录

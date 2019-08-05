@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" import="cn.jackan.domain.User" language="java" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path;
@@ -55,7 +56,8 @@
     </ul>
 
     <div class="user">
-        <span><%=request.getSession().getAttribute("user") == null ? "" : ((User) request.getSession().getAttribute("user")).getUname()%></span>
+        <span>${empty sessionScope.user.uname? "":sessionScope.user.uname}</span>
+        <span>当前在线人数：${applicationScope.online}</span>
     </div>
 </div>
 

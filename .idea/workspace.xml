@@ -7,24 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e99848a-b842-4c02-aa4f-3128db2d6db9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jstl.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/standard.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/gson-2.8.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/standard.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/jackan/listener/SessionListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InformationManage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/InformationManage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/WEB-INF/classes/cn/jackan/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/WEB-INF/classes/cn/jackan/servlet/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/user/allUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/user/allUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/user/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/user/userInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InformationManage/cn/jackan/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InformationManage/cn/jackan/servlet/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/main/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/InformationManage_war_exploded/main/top.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/jackan/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/jackan/servlet/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/allUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/allUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/userInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main/top.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -803,7 +790,9 @@
       <workItem from="1564317919056" duration="25178000" />
       <workItem from="1564662439466" duration="11926000" />
       <workItem from="1564750329879" duration="5955000" />
-      <workItem from="1564901973538" duration="4020000" />
+      <workItem from="1564901973538" duration="5997000" />
+      <workItem from="1564925145656" duration="277000" />
+      <workItem from="1565008447424" duration="1630000" />
     </task>
     <servers />
   </component>
@@ -815,7 +804,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
